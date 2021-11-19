@@ -1,0 +1,59 @@
+@import "scss/variables";
+@import "scss/mixins";
+@import "scss/fonts";
+@import "scss/normalize";
+
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: $text-color;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    background: $background-color;
+}
+
+.wrapper {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+.button {
+    min-width: 218px;
+    padding: 17px 50px;
+    font-weight: 700;
+    background: $color-brand;
+    color: $background-dark;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
+h1, h2, h3, h4, h5 {
+    &.highlight {
+        background: linear-gradient(91.02deg, $color-brand-gradient-from 0%, $color-brand-gradient-to 100%);
+    }
+}

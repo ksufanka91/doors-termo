@@ -1,0 +1,43 @@
+@mixin hover {
+    &:not([disabled]):hover {
+        @content;
+    }
+}
+
+@mixin media-to($to) {
+    @media (max-width: $to) {
+        @content;
+    }
+}
+
+@mixin media-from($to) {
+    @media (min-width: $to) {
+        @content;
+    }
+}
+
+@mixin media-between($from, $to) {
+    @media (min-width: $from) and (max-width: $to) {
+        @content;
+    }
+}
+
+@mixin media-mobile {
+    @include media-to(425px) {
+        @content;
+    }
+}
+
+@mixin media-tablet {
+    @include media-to(768px) {
+        @content;
+    }
+}
+
+@mixin media-only-tablet {
+    @include media-between(425px, 768px) {
+        @content;
+    }
+}
+
+

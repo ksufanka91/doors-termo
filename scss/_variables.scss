@@ -1,0 +1,17 @@
+$color-brand: #FAB600;
+$color-error: #FF4B4B;
+$color-brand-gradient-from: #FFD336;
+$color-brand-gradient-to: #F38F0C;
+
+$background-color: #fff;
+$background-secondary: #F2F4F6;
+$background-dark: #000000;
+
+$text-color: #666666;
+$text-color-light: #BFBFBF;
+$text-color-gray: #BFBFBF;
+
+body {
+    background: linear-gradient(91.02deg, $color-brand-gradient-from 0%, $color-brand-gradient-to 100%);
+}
+
