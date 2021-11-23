@@ -1,0 +1,14 @@
+.navigation {
+
+    padding: 25px 0;
+    font-size: 13px;
+
+    &__items {
+
+        margin-right: 43px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

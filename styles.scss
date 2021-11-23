@@ -22,6 +22,7 @@ body {
     margin: 0 auto;
 }
 
+
 h1 {
     font-size: 5rem;
     font-weight: 800;
@@ -41,7 +42,7 @@ h4 {
 }
 
 .button {
-    min-width: 218px;
+    min-width: 320px;
     padding: 17px 50px;
     font-weight: 700;
     background: $color-brand;
@@ -49,6 +50,20 @@ h4 {
     border: none;
     cursor: pointer;
     white-space: nowrap;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background: #F9C335;
+    }
+
+    &_small {
+        padding: 8px 24px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $background-dark;
 }
 
 
@@ -57,3 +72,23 @@ h1, h2, h3, h4, h5 {
         background: linear-gradient(91.02deg, $color-brand-gradient-from 0%, $color-brand-gradient-to 100%);
     }
 }
+
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+@import "scss/blocks/header";
+@import "scss/blocks/navigation";
+@import "scss/blocks/top-line";

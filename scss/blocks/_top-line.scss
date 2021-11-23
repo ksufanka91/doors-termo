@@ -1,0 +1,30 @@
+.top-line {
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+    background: radial-gradient(50.03% 1906% at 49.97% 100%, #323232 0%, #000000 100%);;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__text {
+        margin-right: 40px;
+        font-size: 20px;
+        font-weight: 700;
+        color: $background-color;
+    }
+
+    .button_red {
+        min-width: 140px;
+        border: transparent;
+        padding: 9px 20px;
+        font-weight: 700;
+        font-size: 12px;
+        color: $background-color;
+        background: linear-gradient(92.99deg, #FF5B5B 0%, #CC1414 100%, #CC1414 100%);
+        border-radius: 3px;
+    }
+}

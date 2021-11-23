@@ -1,0 +1,61 @@
+.header {
+    background: $background-secondary;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 64px;
+    }
+
+    &__location-icon {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 10px;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        img {
+            display: block;
+        }
+    }
+
+    &__contact-info {
+        margin-right: 14px;
+        font-weight: 700;
+    }
+
+    &__instagram {
+        margin: 0 65px 0 50px;
+    }
+
+    &-additional {
+
+        &__items {
+            margin-right: 43px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+
+}
