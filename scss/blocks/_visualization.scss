@@ -1,0 +1,22 @@
+.visualization {
+    min-height: 594px;
+    padding: 143px 179px;
+    margin-bottom: 150px;
+    box-sizing: border-box;
+    background: #FAFAFA url("/images/visualization-image.png") top right no-repeat;
+    background-size: contain;
+
+    &__container {
+        max-width: 456px;
+
+    }
+
+    &__title {
+        margin-bottom: 11px;
+    }
+
+    &__text {
+        margin-bottom: 42px;
+        color: #808080;
+    }
+}

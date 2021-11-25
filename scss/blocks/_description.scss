@@ -1,0 +1,27 @@
+.description {
+    background: #FAFAFA;
+    padding-top: 129px;
+
+    &__container {
+        display: flex;
+
+        &-inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    &__image {
+        margin-right: 77px;
+    }
+
+    &__title {
+        margin-bottom: 7px;
+        background-image: linear-gradient(90.81deg, #FFD336 0%, #F38F0C 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+}
