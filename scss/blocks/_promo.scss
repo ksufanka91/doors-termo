@@ -1,0 +1,22 @@
+.promo {
+    background: url("/images/promo-image.png") no-repeat;
+    background-size: cover; // todo
+    //height: 1057px;
+    height: calc(100vh - 243px);
+    min-height: 650px;
+    margin-bottom: 100px;
+
+    &__inner {
+        max-width: 923px;
+        padding-top: 130px;
+    }
+
+    &__title {
+
+    }
+
+    &__text {
+        color: $background-color;
+        font-size: 1.3rem;
+    }
+}

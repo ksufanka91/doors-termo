@@ -1,0 +1,28 @@
+.bonus {
+    position: relative;
+    background: radial-gradient(61% 290.5% at 61.81% 55.56%, #FAB600 0%, #F38F0C 100%);
+    box-sizing: border-box;
+    background-size: cover;
+    min-height: 504px;
+    padding: 146px 30px;
+
+    &__container {
+        position: relative;
+        max-width: 660px;
+    }
+
+    &__text {
+        color: $background-dark;
+        font-size: 1.333rem;
+    }
+
+    &__discount-background {
+        position: absolute;
+        background: url("/images/bonus-discount-background.png") no-repeat;
+        background-size: 1093px 271px;
+        width: 100%;
+        height: 100%;
+        top: 44px;
+        right: -1749px;
+    }
+}

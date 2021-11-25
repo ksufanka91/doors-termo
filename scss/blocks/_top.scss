@@ -1,0 +1,154 @@
+.top {
+    background: $background-dark;
+    padding: 90px 0 0;
+
+
+    &__title {
+        color: $background-color;
+        text-align: center;
+    }
+
+    &__text {
+        width: 60%;
+        text-align: center;
+        margin: 0 auto 60px;
+    }
+
+    &__top-door {
+        padding: 90px 60px;
+        margin-bottom: 150px;
+        min-height: 740px;
+        box-sizing: border-box;
+        background: url("/images/top-door.jpg") no-repeat center center;
+        background-size: cover;
+    }
+
+    &__label-best-door {
+        position: relative;
+        display: inline-flex;
+        padding: 1px 8px;
+        margin-bottom: 17px;
+        font-size: 0.6667rem;
+        font-weight: 700;
+        border-radius: 3px;
+        color: $background-color;
+        background: linear-gradient(92.43deg, #FF5B5B 0%, #CC1414 100%, #CC1414 100%);
+
+        &:after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 2px;
+            top: 0;
+            left: 27px;
+            background-color: $background-color;
+        }
+    }
+
+    .label__inner {
+        margin-right: 12px;
+    }
+
+    &__number-best-door {
+        margin-bottom: 30px;
+    }
+
+    &__text-best-door {
+        max-width: 447px;
+        font-size: 1.333rem;
+        color: $background-color;
+        line-height: 2;
+        margin-bottom: 43px;
+    }
+
+    .button_white {
+        background-color: $background-color;
+        color: $background-dark;
+        line-height: 1.5;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .button_no-bg {
+        display: block;
+        min-width: 180px;
+        font-size: 0.666rem;
+        font-weight: 700;
+        padding: 12px 6px;
+        background-color: transparent;
+        color: #808080;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    &__rate-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__rate-item {
+        width: 400px;
+        height: 520px;
+        box-sizing: border-box;
+        margin-right: 21px;
+        margin-bottom: 235px;
+        padding: 14px 20px 0 14px;
+        background: rgba(255, 255, 255, 0.1);
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:nth-child(3n+3) {
+            margin-right: 0;
+        }
+    }
+
+    &__rate-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    &__container-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    &__container-add {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__rate-requests {
+        margin-bottom: 5px;
+        color: $background-color;
+    }
+
+    &__rate-label {
+        position: relative;
+        padding: 1px 8px;
+        font-size: 0.6667rem;
+        color: $background-dark;
+        background: linear-gradient(90.81deg, #FFD336 0%, #F38F0C 100%);
+        border-radius: 3px;
+        white-space: nowrap;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 26px;
+            height: 100%;
+            width: 1px;
+            background-color: $background-dark;
+        }
+    }
+
+    &__rate-image {
+        margin-bottom: 25px;
+    }
+}
