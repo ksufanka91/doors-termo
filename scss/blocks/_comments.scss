@@ -1,0 +1,119 @@
+.comments {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.7778rem;
+    line-height: 1.5714;
+    margin-top: -50px;
+    background: #FAFAFA;
+    padding: 220px 0 150px;
+
+    &__rating-icon {
+        margin: 0 auto 20px;
+        display: block;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 106px;
+
+        &-title {
+            font-size: 3.3333rem;
+            line-height: 0.8333;
+            color: $background-dark;
+            margin-right: 20px;
+        }
+    }
+
+    &__columns {
+        display: flex;
+    }
+
+    &__column {
+        width: 50%;
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__comment-item {
+        margin-bottom: 20px;
+        padding: 20px 20px 30px;
+        background: $background-color;
+        border-radius: 3px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__user-image {
+        width: 36px;
+        height: 36px;
+        margin-right: 10px;
+    }
+
+    &__item-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 11px;
+    }
+
+
+    &__user-name {
+        color: $background-dark;
+
+        &:first-letter {
+            color: $first-letter-color;
+        }
+    }
+
+    &__item-info {
+        display: flex;
+    }
+
+    &__item-rating {
+        display: flex;
+        margin: 0 15px 20px 0;
+        font-size: 0.7222rem;
+    }
+
+    &__item-image {
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+
+    &__advantages {
+        margin-bottom: 10px;
+
+        span {
+            color: $background-dark;
+            font-weight: 700;
+        }
+    }
+
+    &__disadvantages {
+        margin-bottom: 10px;
+
+        span {
+            color: $background-dark;
+            font-weight: 700;
+        }
+    }
+
+    &__user-comment {
+        margin-bottom: 20px;
+
+        span {
+            color: $background-dark;
+            font-weight: 700;
+        }
+    }
+
+    &__date {
+        color: $text-color-light;
+    }
+
+
+}

@@ -1,0 +1,31 @@
+.catalogue {
+    padding: 100px 0;
+    background: linear-gradient(91.02deg, #FFD336 0%, #F9B222 48.64%, #F38F0C 100%);
+
+    &__container-inner {
+        position: relative;
+        width: 50%;
+    }
+
+    .button_no-bg {
+        color: $background-dark;
+        border: 1px solid $background-dark;
+    }
+
+    &__text {
+        margin-bottom: 43px;
+        color: $background-dark;
+    }
+
+    &__image {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__image-2 {
+        position: absolute;
+        top: -41px;
+        right: 20px;
+    }
+
+}

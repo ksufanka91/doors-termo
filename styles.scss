@@ -19,13 +19,25 @@ body {
 }
 
 .wrapper {
+    position: relative;
     max-width: 1260px;
     padding: 0 15px;
     margin: 0 auto;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        background: red;
+        width: 1px;
+        transform: translateX(-1px);
+    }
 }
 
 
-h1, .h1  {
+h1, .h1 {
     font-size: 5rem;
     line-height: 1.07;
     font-weight: 800;
@@ -80,6 +92,17 @@ h4 {
     }
 }
 
+.button_no-bg {
+    display: block;
+    min-width: 180px;
+    font-size: 0.666rem;
+    font-weight: 700;
+    padding: 12px 6px;
+    background-color: transparent;
+    color: #808080;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
 a {
     text-decoration: none;
     color: $background-dark;
@@ -128,4 +151,8 @@ h1, h2, h3, h4, h5 {
 @import "scss/blocks/description";
 @import "scss/blocks/slider";
 @import "scss/blocks/visualization";
+@import "scss/blocks/technology";
+@import "scss/blocks/catalogue";
+@import "scss/blocks/process";
+@import "scss/blocks/comments";
 

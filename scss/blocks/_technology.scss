@@ -1,0 +1,43 @@
+.technology {
+    margin-bottom: 197px;
+
+    &__main-title {
+        background-image: linear-gradient(90.81deg, #FFD336 0%, #F38F0C 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        margin-bottom: 84px;
+    }
+
+    &__item {
+        position: relative;
+        padding: 140px 0;
+        margin-bottom: 100px;
+        background: #FAFAFA;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__container {
+        width: 40%;
+    }
+
+    &__bg {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        object-fit: contain;
+
+        &-steel {
+            height: 100%;
+            left: calc(50% + 100px);
+        }
+
+        &-locks {
+            height: 100%;
+            left: calc(50% + 100px);
+        }
+    }
+}

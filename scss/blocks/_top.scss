@@ -23,8 +23,7 @@
         background-size: cover;
     }
 
-    &__label-best-door {
-        position: relative;
+    &__label {
         display: inline-flex;
         padding: 1px 8px;
         margin-bottom: 17px;
@@ -34,19 +33,20 @@
         color: $background-color;
         background: linear-gradient(92.43deg, #FF5B5B 0%, #CC1414 100%, #CC1414 100%);
 
-        &:after {
-            content: "";
-            position: absolute;
-            height: 100%;
-            width: 2px;
-            top: 0;
-            left: 27px;
-            background-color: $background-color;
-        }
-    }
+        &-inner {
+            margin-right: 12px;
+            position: relative;
 
-    .label__inner {
-        margin-right: 12px;
+            &:after {
+                content: "";
+                position: absolute;
+                height: calc(100% + 2px);
+                width: 2px;
+                top: -1px;
+                right: -7px;
+                background-color: $background-color;
+            }
+        }
     }
 
     &__number-best-door {
@@ -69,16 +69,7 @@
         padding-right: 45px;
     }
 
-    .button_no-bg {
-        display: block;
-        min-width: 180px;
-        font-size: 0.666rem;
-        font-weight: 700;
-        padding: 12px 6px;
-        background-color: transparent;
-        color: #808080;
-        border: 1px solid rgba(255, 255, 255, 0.25);
-    }
+
 
     &__rate-items {
         display: flex;
@@ -87,6 +78,7 @@
     }
 
     &__rate-item {
+        position: relative;
         width: 400px;
         height: 520px;
         box-sizing: border-box;
@@ -104,17 +96,17 @@
         }
     }
 
-    &__rate-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 40px;
+    &__rate-number {
+        position: absolute;
+        top: 20px;
+        left: 30px;
     }
 
-    &__container-inner {
+    &__rate-container {
         display: flex;
-        flex-direction: column;
         align-items: end;
+        margin: 30px 0 40px;
+        flex-direction: column;
     }
 
     &__container-add {
@@ -129,7 +121,7 @@
     }
 
     &__rate-label {
-        position: relative;
+        display: inline-flex;
         padding: 1px 8px;
         font-size: 0.6667rem;
         color: $background-dark;
@@ -137,14 +129,20 @@
         border-radius: 3px;
         white-space: nowrap;
 
-        &:after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 26px;
-            height: 100%;
-            width: 1px;
-            background-color: $background-dark;
+
+        &-inner {
+            margin-right: 12px;
+            position: relative;
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: -1px;
+                right: -7px;
+                height: calc(100% + 2px);
+                width: 1px;
+                background-color: $background-dark;
+            }
         }
     }
 

@@ -1,14 +1,31 @@
 .visualization {
-    min-height: 594px;
-    padding: 143px 179px;
+    position: relative;
+    height: 594px;
+    padding: 143px 0;
     margin-bottom: 150px;
     box-sizing: border-box;
-    background: #FAFAFA url("/images/visualization-image.png") top right no-repeat;
-    background-size: contain;
+    background: #FAFAFA;
+
+    &__bg {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        object-fit: cover;
+
+        @include media-to(1900px) {
+            right: 0;
+            left: auto;
+        }
+
+        @include media-to(1200px) {
+            width: 100%;
+        }
+    }
 
     &__container {
+        position: relative;
         max-width: 456px;
-
     }
 
     &__title {
