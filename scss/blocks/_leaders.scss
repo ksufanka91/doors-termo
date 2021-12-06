@@ -4,7 +4,7 @@
 
     &__title {
         text-align: center;
-        margin-bottom: 57px;
+        margin-bottom: 45px;
     }
 
     &__items {
@@ -28,6 +28,7 @@
         &-description {
             color: $text-color-light;
             font-size: 0.72rem;
+            margin-bottom: 3px;
         }
 
         &-prev-price {
@@ -58,7 +59,7 @@
 
     .button_no-bg {
         min-width: 180px;
-        margin-bottom: 25px;
+        margin-bottom: 17px;
         font-size: 0.72rem;
         font-weight: 400;
         padding: 10px;

@@ -1,18 +1,18 @@
 .promo {
     background: url("/images/promo-image.png") no-repeat;
-    background-size: cover; // todo
-    //height: 1057px;
+    background-size: cover;
     height: calc(100vh - 243px);
     min-height: 650px;
     margin-bottom: 100px;
 
     &__inner {
         max-width: 923px;
-        padding-top: 130px;
+        padding-top: 133px;
     }
 
-    &__title {
-
+    &__header {
+        letter-spacing: -2px;
+        margin-bottom: 34px;
     }
 
     &__text {

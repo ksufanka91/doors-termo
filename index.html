@@ -6,8 +6,9 @@
 
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-    <script src="path-to-the-file/splide.min.js"></script>
+    <link rel="stylesheet" href="libs/splide/css/splide.min.css">
 </head>
+
 <body>
 
 <header class="header">
@@ -15,7 +16,7 @@
         <div class="menu">
             <div class="menu__info">
                 <a class="menu__logo" href="#">
-                    <img src="images/header-logo.png" alt="logo" width="162" height="51">
+                    <img src="images/header-logo.png" alt="logo" width="154" height="49">
                 </a>
 
                 <a class="menu__location-icon" href="#">
@@ -68,7 +69,7 @@
             <h1 class="promo__header">Входные двери с&nbsp;терморазрывом</h1>
 
             <div class="promo__text">Входные двери премиум-класса для коттеджей.
-                Официальное представительство производителя стальных дверей Termo в Новосибирске.
+                Официальное&nbsp;представительство производителя стальных <br> дверей Termo в Новосибирске.
             </div>
         </div>
     </div>
@@ -268,30 +269,41 @@
 </div>
 
 <div class="wrapper">
-    <div class="slider">
-        <h2 class="slider__main-title">Многоуровневая термозащита</h2>
+    <div class="splide">
+        <h2 class="splide__main-title">Многоуровневая термозащита</h2>
 
-        <div class="slider__container">
-            <div class="slider__container-inner">
-                <div class="slider__pagination">1/11</div>
-                <div class="slider__title">Панель из корабельной <br> фанеры</div>
-                <div class="slider__text">
-                    Корабельная фанера представляет собой листы со слоистой структурой из шпона.
-                    При этом направление волокон меняется от одного слоя к другому.
-                </div>
-            </div>
 
-            <div class="slider__container-inner">
-                <img class="slider__image" src="images/slider-image.png" alt="slider-image" width="571" height="571">
+        <div class="splide__container-inner">
+            <div class="splide__pagination">1/11</div>
+            <div class="splide__title">Панель из корабельной <br> фанеры</div>
+            <div class="splide__text">
+                Корабельная фанера представляет собой листы со слоистой структурой из шпона.
+                При этом направление волокон меняется от одного слоя к другому.
             </div>
         </div>
 
-        <div class="slider__buttons">
-            <div class="slider__button slider__button_prev"></div>
-            <div class="slider__button slider__button_next"></div>
+        <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow_prev"></button>
+            <button class="splide__arrow splide__arrow_next"></button>
+        </div>
+
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide"><img class="slider__image" src="images/slider-image.png"
+                                               alt="slider-image"
+                                               width="571" height="571"></li>
+                <li class="splide__slide"><img class="slider__image" src="images/slider-image.png"
+                                               alt="slider-image"
+                                               width="571" height="571"></li>
+                <li class="splide__slide"><img class="slider__image" src="images/slider-image.png"
+                                               alt="slider-image"
+                                               width="571" height="571"></li>
+            </ul>
         </div>
     </div>
 </div>
+
+
 
 <div class="visualization">
     <img class="visualization__bg" src="/images/visualization-image.png" alt="">
@@ -815,6 +827,8 @@
     </div>
 </div>
 
+
+<script src="libs/splide/js/splide.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
