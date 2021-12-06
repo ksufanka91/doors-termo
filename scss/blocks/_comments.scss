@@ -5,6 +5,7 @@
     margin-top: -50px;
     background: #FAFAFA;
     padding: 220px 0 150px;
+    color: #808080;
 
     &__rating-icon {
         margin: 0 auto 20px;
@@ -52,6 +53,8 @@
         width: 36px;
         height: 36px;
         margin-right: 10px;
+        object-fit: cover;
+        border-radius: 50%;
     }
 
     &__item-header {

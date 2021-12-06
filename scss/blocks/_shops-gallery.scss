@@ -1,0 +1,28 @@
+.shops-gallery {
+    padding-top: 160px;
+
+    &__title {
+        width: 60%;
+        margin: 0 auto 50px;
+        line-height: 1.1813;
+    }
+
+    &__columns {
+        display: flex;
+
+    }
+
+    &__column {
+
+        margin-right: 20px;
+
+        &-right {
+
+        }
+    }
+
+    &__image-mb {
+        margin-bottom: 18px;
+    }
+
+}

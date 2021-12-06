@@ -1,0 +1,74 @@
+.shops-map {
+    font-size: 0.7778rem;
+    padding: 130px 0 100px;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__item {
+        display: flex;
+        margin-bottom: 60px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &-title {
+
+            margin-bottom: 10px;
+
+            span {
+                color: $background-dark;
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__control {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    &__columns {
+        display: flex;
+    }
+
+    &__column {
+        width: 50%;
+        margin-right: 20px;
+        overflow: hidden;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__location {
+        margin-bottom: 10px;
+
+
+        &-icon {
+            margin: 4px 10px 0 0;
+        }
+    }
+
+    &__phone {
+
+        margin-bottom: 10px;
+
+        &-icon {
+            margin: 4px 10px 0 0;
+        }
+    }
+
+    &__schedule {
+
+        margin-bottom: 10px;
+
+        &-icon {
+            margin: 4px 10px 0 0;
+        }
+    }
+}

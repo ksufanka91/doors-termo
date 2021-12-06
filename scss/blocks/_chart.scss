@@ -1,0 +1,37 @@
+.chart {
+    position: relative;
+    background: linear-gradient(180deg, #3D3D3D 0%, rgba(61, 61, 61, 0) 100%), #000000;
+    padding: 123px 0;
+
+    &__container {
+
+        width: 45%;
+    }
+
+    &__title {
+        color: $background-color;
+
+        span {
+            background: linear-gradient(94.73deg, #5BC8FF 0%, #1470CC 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: 164px;
+        left: calc(50% + 100px);
+    }
+
+    &__text {
+        color: $text-color-light;
+        margin-bottom: 50px;
+    }
+
+    .button {
+       background: transparent;
+        color: $background-color;
+        border: 1px solid $background-color;
+    }
+}
