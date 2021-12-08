@@ -1,6 +1,6 @@
 .shops-map {
     font-size: 0.7778rem;
-    padding: 130px 0 100px;
+    padding: 75px 0 100px;
 
     &__title {
         text-align: center;
@@ -31,23 +31,29 @@
         margin-bottom: 40px;
     }
 
+    &__search {
+        margin-right: 13px;
+    }
+
     &__columns {
         display: flex;
     }
 
     &__column {
-        width: 50%;
         margin-right: 20px;
         overflow: hidden;
 
         &:last-child {
             margin-right: 0;
         }
+
+        &-left {
+            width: 43%;
+        }
     }
 
     &__location {
         margin-bottom: 10px;
-
 
         &-icon {
             margin: 4px 10px 0 0;
@@ -55,7 +61,6 @@
     }
 
     &__phone {
-
         margin-bottom: 10px;
 
         &-icon {
@@ -64,7 +69,6 @@
     }
 
     &__schedule {
-
         margin-bottom: 10px;
 
         &-icon {

@@ -4,13 +4,12 @@
 
     &__row {
         display: flex;
-        justify-content: space-between;
         margin-bottom: 60px;
     }
 
     &__item {
-        margin-right: 90px;
-        width: calc(100% / 4);
+        margin-right: 95px;
+        width: 225px;
 
         &:last-child {
             margin-right: 0;
@@ -28,6 +27,7 @@
 
     &__title {
         margin-bottom: 12px;
+        margin-left: -9px;
         color: $background-dark;
         font-weight: 700;
     }
@@ -39,8 +39,8 @@
     &__image-main {
         position: absolute;
         height: 100%;
-        right: 50%;
-        top: 0;
+        right: calc(50% + -9px);
+        top: 13px;
         object-fit: contain;
         z-index: 2;
     }
@@ -60,24 +60,29 @@
     }
 
     &__list {
-        position: relative;
 
         &-block {
             padding-left: 100px;
         }
 
         &-item {
+            position: relative;
+            margin-left: -39px;
             list-style-type: none;
 
             &:before {
                 content: "";
                 position: absolute;
-                left: 0;
+                left: -11px;
                 top: 10px;
                 width: 6px;
                 height: 6px;
                 background: $color-brand;
             }
         }
+    }
+
+    &__button {
+        margin-left: -10px;
     }
 }

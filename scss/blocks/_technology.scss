@@ -11,13 +11,21 @@
 
     &__item {
         position: relative;
-        padding: 140px 0;
+        padding: 176px 0;
         margin-bottom: 100px;
         background: #FAFAFA;
 
         &:last-child {
             margin-bottom: 0;
         }
+    }
+
+    &__title {
+        margin-top: -35px;
+    }
+
+    &__text {
+        line-height: 1.6;
     }
 
     &__container {
@@ -27,17 +35,17 @@
     &__bg {
         position: absolute;
         bottom: 0;
-        left: 50%;
+        left: calc(50% + 17px);
         object-fit: contain;
 
         &-steel {
             height: 100%;
-            left: calc(50% + 100px);
+            left: calc(50% + 109px);
         }
 
         &-locks {
             height: 100%;
-            left: calc(50% + 100px);
+            left: calc(50% + 116px);
         }
     }
 }

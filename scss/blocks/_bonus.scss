@@ -4,7 +4,7 @@
     box-sizing: border-box;
     background-size: cover;
     min-height: 504px;
-    padding: 146px 30px;
+    padding: 139px 30px;
     overflow: hidden;
 
     .wrapper {
@@ -14,6 +14,12 @@
     &__container {
         position: relative;
         max-width: 660px;
+        margin-top: -32px;
+    }
+
+    &__title {
+        line-height: 1.2;
+        margin-bottom: 32px;
     }
 
     &__text {
@@ -27,7 +33,7 @@
         background-size: 1061px 241px;
         width: 1061px;
         height: 241px;
-        top: -46px;
-        left: 45%;
+        top: -91px;
+        left: 42%;
     }
 }

@@ -8,32 +8,35 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 46px;
+        margin-bottom: 38px;
         font-weight: 700;
-    }
-
-    &__socials-insta {
-        margin-right: 60px;
     }
 
     &__insta-logo {
         margin-right: 15px;
+        margin-bottom: -6px;
     }
 
-    &__contact-info {
+    &__contact {
         display: flex;
-        align-items: center;
-        margin-right: 15px;
 
-        &:last-child {
-            margin-right: 0;
+        &-instagram {
+            margin-right: 52px;
         }
+    }
+
+    &__info {
+        margin-right: 6px;
+    }
+
+    &__policy {
+        margin-left: 20px;
     }
 
     &__policy-item {
         position: relative;
         margin-right: 38px;
-        font-size: 0.8125rem;
+        font-size: 0.7222rem;
 
         &:hover:after {
             content: "";

@@ -15,10 +15,12 @@
     &__header {
         display: flex;
         justify-content: center;
-        margin-bottom: 106px;
+        margin-bottom: 100px;
 
         &-title {
+            font-family: "Montserrat", sans-serif;
             font-size: 3.3333rem;
+            font-weight: 400;
             line-height: 0.8333;
             color: $background-dark;
             margin-right: 20px;
@@ -40,7 +42,7 @@
 
     &__comment-item {
         margin-bottom: 20px;
-        padding: 20px 20px 30px;
+        padding: 20px 20px 29px;
         background: $background-color;
         border-radius: 3px;
 
@@ -60,11 +62,12 @@
     &__item-header {
         display: flex;
         align-items: center;
-        margin-bottom: 11px;
+        margin-bottom: 7px;
     }
 
 
     &__user-name {
+        letter-spacing: 1px;
         color: $background-dark;
 
         &:first-letter {
@@ -73,12 +76,12 @@
     }
 
     &__item-info {
-        display: flex;
+        margin-bottom: 14px;
     }
 
     &__item-rating {
         display: flex;
-        margin: 0 15px 20px 0;
+        margin: 0 15px 0 0;
         font-size: 0.7222rem;
     }
 

@@ -29,11 +29,15 @@
     }
 
     &__title {
-        margin-bottom: 11px;
+        margin: -1px 0 10px;
     }
 
     &__text {
-        margin-bottom: 42px;
+        margin-bottom: 41px;
         color: #808080;
+    }
+
+    &__button {
+        padding: 19px 42px 19px;;
     }
 }

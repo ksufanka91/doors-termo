@@ -6,7 +6,7 @@
     &__title {
         color: $background-color;
         text-align: center;
-        margin-bottom: 30px;
+        margin: 30px 0;
     }
 
     &__text {
@@ -27,7 +27,7 @@
     &__label {
         display: inline-flex;
         padding: 1px 8px;
-        margin-bottom: 18px;
+        margin-bottom: 17px;
         font-size: 0.6667rem;
         font-weight: 700;
         border-radius: 3px;
@@ -35,7 +35,7 @@
         background: linear-gradient(92.43deg, #FF5B5B 0%, #CC1414 100%, #CC1414 100%);
 
         &-inner {
-            margin-right: 12px;
+            margin-right: 14px;
             position: relative;
 
             &:after {

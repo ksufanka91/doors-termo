@@ -8,8 +8,17 @@
     }
 
     .button_no-bg {
+        min-width: 318px;
+        padding: 18px 10px;
+        font-size: 1rem;
+        font-weight: 700;
         color: $background-dark;
         border: 1px solid $background-dark;
+    }
+
+    &__title {
+        line-height: 1.2;
+        margin: 78px 0 10px;
     }
 
     &__text {
@@ -20,12 +29,14 @@
     &__image {
         position: relative;
         z-index: 1;
+        top: 35px;
+        left: -16px;
     }
 
     &__image-2 {
         position: absolute;
-        top: -41px;
-        right: 20px;
+        top: 2px;
+        right: 60px;
     }
 
 }
