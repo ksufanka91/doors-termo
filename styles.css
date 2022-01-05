@@ -452,22 +452,34 @@ h4 {
 .button:hover {
   background: #F9C335;
 }
-.button_small {
+.button__small {
   padding: 13px 24px 12px 25px;
   font-weight: 400;
 }
-.button_outline {
+.button__outline {
   min-width: 180px;
-  padding: 10px 50px;
-  font-size: 0.666rem;
+  padding: 10px 20px;
+  font-size: 0.6667rem;
   background-color: transparent;
   color: #808080;
   border: 1px solid #979797;
 }
-.button_outline:hover {
+.button__outline:hover {
   background: transparent;
-  border: 1px solid #000000;
+  border-color: #000000;
 }
+.button__outline_dark-bg:hover {
+  background: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.button__white {
+  background: #FFFFFF;
+}
+.button__white:hover {
+  background: #D9D9D9;
+}
+
 a {
   text-decoration: none;
   color: #000000;
@@ -675,7 +687,7 @@ h1.highlight, h2.highlight, h3.highlight, h4.highlight, h5.highlight {
 .promo {
   background: url("/images/promo-image.png") no-repeat;
   background-size: cover;
-  height: calc(100vh - 243px);
+  height: calc(100vh - 210px);
   min-height: 650px;
   margin-bottom: 118px;
 }
