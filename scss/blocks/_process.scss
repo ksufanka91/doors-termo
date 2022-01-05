@@ -2,14 +2,44 @@
     position: relative;
     padding: 95px 0 0;
 
+    @include media-to(960px) {
+        margin-bottom: 60px;
+    }
+
     &__row {
         display: flex;
         margin-bottom: 60px;
+
+        @include media-to(768px) {
+            flex-wrap: wrap;
+        }
+
+        @include media-to(425px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__item {
         margin-right: 95px;
         width: 225px;
+
+        @include media-to(768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-right: 0;
+            margin-bottom: 50px;
+            width: 50%;
+            padding: 0 5px;
+            box-sizing: border-box;
+        }
+
+        @include media-to(425px) {
+            flex-direction: column;
+        }
+
 
         &:last-child {
             margin-right: 0;
@@ -27,7 +57,6 @@
 
     &__title {
         margin-bottom: 12px;
-        margin-left: -9px;
         color: $background-dark;
         font-weight: 700;
     }
@@ -39,10 +68,14 @@
     &__image-main {
         position: absolute;
         height: 100%;
-        right: calc(50% + -9px);
+        right: 50%;
         top: 13px;
-        object-fit: contain;
-        z-index: 2;
+        object-fit: cover;
+        max-width: 50vw;
+
+        @include media-to(960px) {
+            display: none;
+        }
     }
 
     &__container {
@@ -52,22 +85,35 @@
         min-height: 585px;
         align-items: center;
 
+        @include media-to(960px) {
+            justify-content: center;
+            min-height: 0;
+        }
+
         &-inner {
             display: flex;
             flex-direction: column;
             width: 50%;
+
+            @include media-to(960px) {
+                width: auto;
+            }
         }
     }
 
     &__list {
+        padding-left: 11px;
 
         &-block {
             padding-left: 100px;
+
+            @include media-to(960px) {
+                padding: 0;
+            }
         }
 
         &-item {
             position: relative;
-            margin-left: -39px;
             list-style-type: none;
 
             &:before {
@@ -80,9 +126,5 @@
                 background: $color-brand;
             }
         }
-    }
-
-    &__button {
-        margin-left: -10px;
     }
 }

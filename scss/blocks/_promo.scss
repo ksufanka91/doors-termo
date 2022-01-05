@@ -5,18 +5,44 @@
     min-height: 650px;
     margin-bottom: 118px;
 
+    @include media-to(425px) {
+        margin-bottom: 50px;
+        height: calc(100vh - 161px);
+    }
+
     &__inner {
         max-width: 923px;
         padding-top: 133px;
+
+        @include media-to(890px) {
+            padding-top: 60px;
+            text-align: center;
+        }
     }
 
     &__header {
         letter-spacing: -2px;
         margin-bottom: 34px;
+
+        @include media-to(890px) {
+            font-size: 3rem;
+        }
+
+        @include media-to(535px) {
+            font-size: 1.8rem;
+        }
     }
 
     &__text {
         color: $background-color;
         font-size: 1.3rem;
+
+        @include media-to(890px) {
+            font-size: 1.1111rem;
+        }
+
+        @include media-to(535px) {
+            font-size: 0.8889rem;
+        }
     }
 }

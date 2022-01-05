@@ -2,6 +2,10 @@
     padding: 22px 0;
     font-size: 13px;
 
+    @include media-to(710px) {
+        display: none;
+    }
+
     &__item {
         position: relative;
         margin-right: 41px;

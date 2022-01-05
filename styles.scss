@@ -21,7 +21,7 @@ body {
 .wrapper {
     position: relative;
     max-width: 1260px;
-    padding: 0 15px;
+    padding: 0 20px;
     margin: 0 auto;
 
     &:after {
@@ -35,7 +35,6 @@ body {
         transform: translateX(-1px);
     }
 }
-
 
 h1, .h1 {
     font-size: 5rem;
@@ -82,6 +81,7 @@ h4 {
     cursor: pointer;
     white-space: nowrap;
     transition: background-color 0.3s;
+    font-size: 1rem;
 
     &:hover {
         background: #F9C335;
@@ -91,17 +91,24 @@ h4 {
         padding: 13px 24px 12px 25px;
         font-weight: 400;
     }
-}
 
-.button_no-bg {
-    display: block;
-    min-width: 180px;
-    font-size: 0.666rem;
-    font-weight: 700;
-    padding: 12px 6px;
-    background-color: transparent;
-    color: #808080;
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    &_outline {
+        min-width: 180px;
+        padding: 10px 50px;
+        font-size: 0.666rem;
+        background-color: transparent;
+        color: #808080;
+        border: 1px solid #979797;
+
+        &:hover {
+            background: transparent;
+            border: 1px solid #000000;
+        }
+    }
+
+    &__white {
+
+    }
 }
 
 a {
@@ -143,6 +150,7 @@ h1, h2, h3, h4, h5 {
 }
 
 @import "scss/blocks/header";
+@import "scss/blocks/menu";
 @import "scss/blocks/navigation";
 @import "scss/blocks/top-line";
 @import "scss/blocks/promo";
@@ -161,4 +169,4 @@ h1, h2, h3, h4, h5 {
 @import "scss/blocks/shops-gallery";
 @import "scss/blocks/shops-map";
 @import "scss/blocks/footer";
-
+@import "scss/blocks/arrow";

@@ -1,14 +1,31 @@
 .leaders {
     margin-bottom: 162px;
 
+    @include media-between(426px, 1024px) {
+        margin-bottom: 70px;
+    }
+
+    @include media-to(425px) {
+        margin-bottom: 40px;
+    }
+
     &__title {
         text-align: center;
         margin-bottom: 45px;
+
+        @include media-to(460px) {
+            font-size: 1.5rem;
+        }
     }
 
     &__items {
         display: flex;
         justify-content: space-between;
+
+        @include media-to(1024px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__item {
@@ -23,6 +40,32 @@
         border: 1px solid #F0F0F0;
         padding: 25px 90px 0 90px;
         margin-right: 20px;
+
+        @include media-to(1025px) {
+            margin-bottom: 100px;
+            margin-right: 0;
+        }
+
+        @include media-between(1025px, 1300px) {
+            width: 32%;
+        }
+
+        @include media-between(660px, 1024px) {
+            width: 50%;
+        }
+
+        @include media-between(448px, 659px) {
+            width: 75%;
+        }
+
+        @include media-to(447px) {
+            width: 100%;
+            padding-top: 30px;
+        }
+
+        &-title {
+            font-size: 1rem;
+        }
 
         &-description {
             color: $text-color-light;

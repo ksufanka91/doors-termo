@@ -2,17 +2,29 @@
     background: $background-dark;
     padding: 90px 0 0;
 
+    @include media-to(768px) {
+       padding-top: 50px;
+    }
 
     &__title {
         color: $background-color;
         text-align: center;
         margin: 30px 0;
+
+        @include media-to(768px) {
+            font-size: 2rem;
+        }
     }
 
     &__text {
         width: 60%;
         text-align: center;
         margin: 0 auto 60px;
+
+
+        @include media-to(768px) {
+            font-size:  0.8889rem;
+        }
     }
 
     &__top-door {
@@ -22,6 +34,15 @@
         box-sizing: border-box;
         background: url("/images/top-door.jpg") no-repeat center center;
         background-size: cover;
+
+        @include media-to(1300px) {
+            margin-bottom: 100px;
+        }
+
+        @include media-to(425px) {
+            text-align: center;
+            padding: 60px 40px;
+        }
     }
 
     &__label {
@@ -52,6 +73,10 @@
 
     &__number-best-door {
         margin-bottom: 30px;
+
+        @include media-to(425px) {
+            font-size: 4rem;
+        }
     }
 
     &__text-best-door {
@@ -60,6 +85,10 @@
         color: $background-color;
         line-height: 1.5;
         margin-bottom: 43px;
+
+        @include media-to(425px) {
+            font-size: 1.1111rem;
+        }
     }
 
     .button_white {
@@ -69,12 +98,33 @@
         line-height: 1.5;
         padding-left: 39px;
         padding-right: 43px;
+
+        @include media-to(425px) {
+            min-width: 0;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: 1rem;
+        }
+
+        @include media-to(375px) {
+            min-width: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 0.8889rem;
+        }
+
+
     }
 
     &__rate-items {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @include media-to(1300px) {
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     &__rate-item {
@@ -87,12 +137,32 @@
         padding: 14px 20px 0 14px;
         background: rgba(255, 255, 255, 0.1);
 
+        @include media-between(426px, 1300px) {
+            margin-left: 20px;
+            margin-bottom: 200px;
+        }
+
+        @include media-to(425px) {
+            margin-right: 0;
+            margin-bottom: 165px;
+            padding: 0 20px 0 14px;
+        }
+
         &:last-child {
             margin-right: 0;
         }
 
         &:nth-child(3n+3) {
             margin-right: 0;
+
+            @include media-between(426px, 1300px) {
+                margin-right: 20px;
+                margin-left: 20px;
+            }
+
+            @include media-to(425px) {
+                margin-right: 0;
+            }
         }
     }
 
@@ -100,6 +170,11 @@
         position: absolute;
         top: 17px;
         left: 14px;
+
+        @include media-to(425px) {
+            top: 20px;
+            font-size: 4rem;
+        }
     }
 
     &__rate-container {

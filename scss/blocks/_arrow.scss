@@ -1,0 +1,25 @@
+.arrow {
+    display: flex;
+    justify-content: end;
+
+    &__fixed {
+        position: fixed;
+        bottom: 25px;
+        width: 60px;
+        height: 60px;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.25);
+        }
+
+        &:after {
+            position: absolute;
+            content: url(/images/footer-arrow-fixed-button.svg);
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

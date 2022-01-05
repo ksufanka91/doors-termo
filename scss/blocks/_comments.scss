@@ -7,6 +7,14 @@
     padding: 220px 0 150px;
     color: #808080;
 
+    @include media-to(768px) {
+        padding: 150px 0 100px;
+    }
+
+    @include media-to(425px) {
+        padding: 80px 0;
+    }
+
     &__rating-icon {
         margin: 0 auto 20px;
         display: block;
@@ -17,6 +25,29 @@
         justify-content: center;
         margin-bottom: 100px;
 
+        @include media-to(1024px) {
+            align-items: center;
+            flex-direction: column;
+        }
+
+        @include media-to(768px) {
+            display: block;
+            text-align: center;
+            padding: 20px 0 30px;
+            margin-bottom: 0;
+        }
+
+        &-image {
+            @include media-to(1024px) {
+                width: 300px;
+                height: auto;
+            }
+
+            @include media-to(425px) {
+                width: 200px;
+            }
+        }
+
         &-title {
             font-family: "Montserrat", sans-serif;
             font-size: 3.3333rem;
@@ -24,16 +55,32 @@
             line-height: 0.8333;
             color: $background-dark;
             margin-right: 20px;
+
+            @include media-to(1024px) {
+                font-size: 2rem;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
         }
     }
 
     &__columns {
         display: flex;
+
+        @include media-to(768px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__column {
         width: 50%;
         margin-right: 20px;
+
+        @include media-to(768px) {
+            width: 100%;
+            margin-right: 0;
+        }
 
         &:last-child {
             margin-right: 0;
@@ -45,6 +92,10 @@
         padding: 20px 20px 29px;
         background: $background-color;
         border-radius: 3px;
+
+        @include media-to(768px) {
+            width: auto;
+        }
 
         &:last-child {
             margin-bottom: 0;
@@ -77,12 +128,20 @@
 
     &__item-info {
         margin-bottom: 14px;
+
+        @include media-to(520px) {
+            flex-direction: column;
+        }
     }
 
     &__item-rating {
         display: flex;
-        margin: 0 15px 0 0;
+        margin-right: 15px;
         font-size: 0.7222rem;
+
+        @include media-to(520px) {
+            margin-bottom: 10px;
+        }
     }
 
     &__item-image {

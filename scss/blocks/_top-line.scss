@@ -2,26 +2,39 @@
     align-items: center;
     justify-content: center;
     padding: 10px 0;
-    background: radial-gradient(50.03% 1906% at 49.97% 100%, #323232 0%, #000000 100%);;
+    background: radial-gradient(50.03% 1906% at 49.97% 100%, #323232 0%, #000000 100%);
+
+    @include media-to(710px) {
+       padding: 20px 10px;
+    }
 
     .wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     &__text {
         margin-right: 40px;
-        font-size: 20px;
+        font-size: 1.1111rem;
         font-weight: 700;
         color: $background-color;
+
+        @include media-to(710px) {
+            margin-bottom: 10px;
+        }
+
+        @include media-to(590px) {
+            display: none;
+        }
     }
 
     .button_red {
         border: transparent;
         padding: 9px 11px;
         font-weight: 700;
-        font-size: 12px;
+        font-size: 0.6667rem;
         color: $background-color;
         background: linear-gradient(92.99deg, #FF5B5B 0%, #CC1414 100%, #CC1414 100%);
         border-radius: 3px;

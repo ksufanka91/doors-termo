@@ -3,9 +3,18 @@
     background: linear-gradient(180deg, #3D3D3D 0%, rgba(61, 61, 61, 0) 100%), #000000;
     padding: 123px 0;
 
+    @include media-to(425px) {
+        padding: 80px 0;
+    }
+
     &__container {
         width: 45%;
         margin-top: -22px;
+
+        @include media-to(1100px) {
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &__title {
@@ -20,9 +29,17 @@
     }
 
     &__image {
+        display: block;
         position: absolute;
         top: 158px;
         left: calc(50% + 112px);
+        max-width: calc(50% - 150px);
+        
+        @include media-to(1100px) {
+            position: static;
+            max-width: calc(100% - 40px);
+            margin: 0 auto 80px;
+        }
     }
 
     &__text {
@@ -34,6 +51,12 @@
        background: transparent;
         color: $background-color;
         border: 1px solid $background-color;
+
+        @include media-to(425px) {
+            max-width: 80%;
+            min-width: 0;
+            padding: 20px;
+        }
     }
 
     &__button {

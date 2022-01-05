@@ -7,6 +7,11 @@
     padding: 139px 30px;
     overflow: hidden;
 
+    @include media-to(768px) {
+        padding: 80px 30px;
+        min-height: auto;
+    }
+
     .wrapper {
         position: relative;
     }
@@ -20,6 +25,14 @@
     &__title {
         line-height: 1.2;
         margin-bottom: 32px;
+
+        @include media-to(470px) {
+            font-size: 2.2222rem;
+        }
+
+        @include media-to(375px) {
+            font-size: 1.8rem;
+        }
     }
 
     &__text {
@@ -35,5 +48,9 @@
         height: 241px;
         top: -91px;
         left: 42%;
+
+        @include media-to(1024px) {
+            background: none;
+        }
     }
 }

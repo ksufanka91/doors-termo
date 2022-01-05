@@ -4,9 +4,21 @@
     padding-bottom: 100px;
     margin: 0 auto;
 
+
     &__main-title {
         margin-bottom: 97px;
         text-align: center;
+
+        @include media-between(320px, 425px) {
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 50px;
+        }
+
+        @include media-to(320px) {
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
     }
 
     &__pagination {
@@ -22,10 +34,19 @@
 
     &__text {
         font-size: 0.7222rem;
+
+        @include media-to(1024px) {
+            margin-bottom: 50px;
+        }
     }
 
     &__container {
         display: flex;
+
+        @include media-to(1024px) {
+            flex-direction: column;
+            align-items: center;
+        }
 
         &-left,
         &-right {
@@ -37,10 +58,24 @@
             display: flex;
             flex-direction: column;
             margin-left: 59px;
+
+            @include media-to(1024px) {
+                text-align: center;
+                margin: 0;
+            }
+
+            @include media-to(425px) {
+                width: 100%;
+            }
         }
 
         &-right {
             margin-top: -20px;
+
+            @include media-to(1024px) {
+                width: 100%;
+                margin: 0;
+            }
         }
     }
 
@@ -53,6 +88,11 @@
         &__arrows {
             margin-top: auto;
             display: flex;
+
+            @include media-to(1024px) {
+                margin-top: 0;
+                justify-content: center;
+            }
         }
 
         &__arrow {
@@ -72,7 +112,6 @@
                 display: none;
             }
 
-
             &_next {
 
               &:after {
@@ -87,6 +126,15 @@
                     content: url("/images/slider-arrow-next.svg");
                     transform: rotate(-180deg);
                 }
+            }
+        }
+
+        &__image {
+            @include media-to(1024px) {
+                display: block;
+                max-width: 100%;
+                height: auto;
+                margin: 0 auto;
             }
         }
     }

@@ -1,0 +1,112 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0;
+
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    &__burger {
+        display: flex;
+        align-items: center;
+
+        &-icon {
+            @include media-from(711px) {
+                display: none;
+            }
+        }
+    }
+
+    &__logo {
+        margin-right: 67px;
+
+        &-image {
+            width: 154px;
+            height: auto;
+
+            @include media-to(425px) {
+                width: 140px;
+                height: auto;
+            }
+        }
+    }
+
+    &__location-icon {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 10px;
+        }
+
+        @include media-to(890px) {
+            display: none;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        img {
+            display: block;
+        }
+    }
+
+    &__contact-info {
+        margin-top: -5px;
+        margin-right: 8px;
+        font-weight: 700;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @include media-to(710px) {
+            display: none;
+        }
+
+        &_tel {
+
+            @include media-to(1090px) {
+                display: none;
+            }
+        }
+    }
+
+    &__instagram {
+        margin: -5px 63px 0;
+
+        @include media-to(1090px) {
+            margin-left: 0;
+        }
+
+        @include media-to(710px) {
+            display: none;
+        }
+
+    }
+
+    &-additional {
+        &__items {
+            margin-right: 43px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .button {
+        @include media-to(710px) {
+            display: none;
+        }
+
+    }
+}

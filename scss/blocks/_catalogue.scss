@@ -2,9 +2,30 @@
     padding: 100px 0;
     background: linear-gradient(91.02deg, #FFD336 0%, #F9B222 48.64%, #F38F0C 100%);
 
+    &__container {
+        @include media-to(1024px) {
+            text-align: center;
+        }
+    }
+
     &__container-inner {
         position: relative;
         width: 50%;
+
+        @include media-to(1024px) {
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        @include media-to(425px) {
+            width: 100%;
+        }
+    }
+
+    &__hidden {
+        @include media-to(1024px) {
+            display: none;
+        }
     }
 
     .button_no-bg {
@@ -14,16 +35,41 @@
         font-weight: 700;
         color: $background-dark;
         border: 1px solid $background-dark;
+
+        @include media-to(1024px) {
+            display: inline-block;
+        }
+
+        @include media-to(425px) {
+            min-width: 0;
+            width: 100%;
+        }
     }
 
     &__title {
         line-height: 1.2;
         margin: 78px 0 10px;
+
+        @include media-to(1024px) {
+            margin-top: 0;
+        }
+
+        @include media-to(768px) {
+            font-size: 2.2222rem;
+        }
+
+        @include media-to(425px) {
+            font-size: 2rem;
+        }
     }
 
     &__text {
         margin-bottom: 43px;
         color: $background-dark;
+
+        @include media-to(768px) {
+            font-size: 0.8889rem;
+        }
     }
 
     &__image {
@@ -38,5 +84,6 @@
         top: 2px;
         right: 60px;
     }
+
 
 }
