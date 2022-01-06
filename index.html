@@ -248,29 +248,12 @@
             <h2 class="bonus__title">Приятный бонус!&nbsp;Скидка на дверь 10&nbsp;000&nbsp&nbsp;₽</h2>
         </div>
 
-        <div id="countdown" class="countdown d-flex">
-            <div class="countdown__main-text"></div>
+        <div id="countdown" class="bonus__countdown">
+            <span class="bonus__countdown-main-text">Успей! Осталось</span>
 
-            <div class="countdown__time">
-                <div class="countdown-number">
-                    <span class="hours countdown__time"></span>
-                    <span class="countdown__text">час.:</span>
-                </div>
-            </div>
-
-            <div class="countdown__time">
-                <div class="countdown-number">
-                    <span class="minutes countdown__time"></span>
-                    <span class="countdown__text">мин.:</span>
-                </div>
-            </div>
-
-            <div class="countdown__time">
-                <div class="countdown-number">
-                    <span class="seconds countdown__time"></span>
-                    <span class="countdown__text">сек.:</span>
-                </div>
-            </div>
+            <span class="hours">00</span> час. :
+            <span class="minutes">00</span> мин. :
+            <span class="seconds">00</span> сек.
         </div>
     </div>
 </div>
@@ -841,12 +824,11 @@
             </div>
 
             <div class="shops-map__column shops-map__column-right">
-                <img class="shops-map__map-image" src="images/shops-map-map-image.png" alt="map-image">
+                <div id="contacts-map" class="shops-map__map"></div>
             </div>
         </div>
     </div>
 </div>
-
 
 <footer class="footer">
     <div class="wrapper">
@@ -886,11 +868,12 @@
 
 <div class="wrapper">
     <div class="arrow">
-        <button class="arrow__fixed"></button>
+        <button class="arrow__fixed back-to-top"></button>
     </div>
 </div>
 
-
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=75867868-84f1-4b87-99cf-976071c78d6b"
+        type="text/javascript"></script>
 <script src="libs/splide/js/splide.min.js"></script>
 <script src="script.js"></script>
 </body>

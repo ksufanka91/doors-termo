@@ -53,4 +53,19 @@
             background: none;
         }
     }
+
+    &__countdown {
+        color: black;
+        font-size: 24px;
+
+        @include media-mobile {
+            font-size: 18px;
+        }
+
+        &-main-text {
+            @include media-to(600px) {
+                display: block;
+            }
+        }
+    }
 }

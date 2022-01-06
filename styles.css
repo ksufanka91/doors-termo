@@ -1120,6 +1120,20 @@ h1.highlight, h2.highlight, h3.highlight, h4.highlight, h5.highlight {
     background: none;
   }
 }
+.bonus__countdown {
+  color: black;
+  font-size: 24px;
+}
+@media (max-width: 425px) {
+  .bonus__countdown {
+    font-size: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .bonus__countdown-main-text {
+    display: block;
+  }
+}
 
 .description {
   background: #FAFAFA;
@@ -2049,7 +2063,6 @@ h1.highlight, h2.highlight, h3.highlight, h4.highlight, h5.highlight {
 }
 .shops-map__column {
   margin-right: 20px;
-  overflow: hidden;
 }
 .shops-map__column:last-child {
   margin-right: 0;
@@ -2062,6 +2075,9 @@ h1.highlight, h2.highlight, h3.highlight, h4.highlight, h5.highlight {
     width: 100%;
     margin-bottom: 50px;
   }
+}
+.shops-map__column-right {
+  flex: 1;
 }
 .shops-map__location {
   margin-bottom: 10px;
@@ -2081,10 +2097,9 @@ h1.highlight, h2.highlight, h3.highlight, h4.highlight, h5.highlight {
 .shops-map__schedule-icon {
   margin: 4px 10px 0 0;
 }
-@media (max-width: 1150px) {
-  .shops-map__map-image {
-    width: 100%;
-  }
+.shops-map__map {
+  width: 100%;
+  height: 500px;
 }
 @media (max-width: 425px) {
   .shops-map__logo {
@@ -2202,6 +2217,15 @@ h1.highlight, h2.highlight, h3.highlight, h4.highlight, h5.highlight {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+.arrow .back-to-top {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s;
+}
+.arrow .back-to-top_show {
+  opacity: 1;
+  visibility: visible;
 }
 
 /*# sourceMappingURL=styles.css.map */

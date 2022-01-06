@@ -11,8 +11,8 @@
 
         @include media-to(768px) {
             font-size: 2.2222rem;
-            }
         }
+    }
 
     &__item {
         display: flex;
@@ -47,13 +47,12 @@
         display: flex;
 
         @include media-to(1150px) {
-           flex-direction: column;
+            flex-direction: column;
         }
     }
 
     &__column {
         margin-right: 20px;
-        overflow: hidden;
 
         &:last-child {
             margin-right: 0;
@@ -66,6 +65,10 @@
                 width: 100%;
                 margin-bottom: 50px;
             }
+        }
+
+        &-right {
+            flex: 1;
         }
     }
 
@@ -93,15 +96,14 @@
         }
     }
 
-    &__map-image {
-        @include media-to(1150px) {
-            width: 100%;
-        }
+    &__map {
+        width: 100%;
+        height: 500px;
     }
 
     &__logo {
         @include media-to(425px) {
-          display: none;
+            display: none;
         }
     }
 }

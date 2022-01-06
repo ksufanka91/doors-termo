@@ -22,4 +22,15 @@
             transform: translate(-50%, -50%);
         }
     }
+
+    .back-to-top {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s;
+
+        &_show {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
 }
