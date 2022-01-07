@@ -32,7 +32,7 @@
         margin-bottom: 150px;
         min-height: 740px;
         box-sizing: border-box;
-        background: url("/images/top-door.jpg") no-repeat center center;
+        background: url("images/top-door.jpg") no-repeat center center;
         background-size: cover;
 
         @include media-to(1300px) {

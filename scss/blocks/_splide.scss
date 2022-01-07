@@ -115,7 +115,7 @@
             &_next {
 
               &:after {
-                  content: url("/images/slider-arrow-next.svg");
+                  content: url("images/slider-arrow-next.svg");
 
               }
             }
@@ -123,7 +123,7 @@
             &_prev {
 
                 &:after {
-                    content: url("/images/slider-arrow-next.svg");
+                    content: url("images/slider-arrow-next.svg");
                     transform: rotate(-180deg);
                 }
             }

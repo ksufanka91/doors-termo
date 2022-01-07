@@ -674,7 +674,7 @@ h1.highlight, h2.highlight, h3.highlight, h4.highlight, h5.highlight {
 }
 
 .promo {
-  background: url("/images/promo-image.png") no-repeat;
+  background: url("images/promo-image.png") no-repeat;
   background-size: cover;
   height: calc(100vh - 210px);
   min-height: 650px;
@@ -870,7 +870,7 @@ h1.highlight, h2.highlight, h3.highlight, h4.highlight, h5.highlight {
   margin-bottom: 150px;
   min-height: 740px;
   box-sizing: border-box;
-  background: url("/images/top-door.jpg") no-repeat center center;
+  background: url("images/top-door.jpg") no-repeat center center;
   background-size: cover;
 }
 @media (max-width: 1300px) {
@@ -1097,7 +1097,7 @@ h1.highlight, h2.highlight, h3.highlight, h4.highlight, h5.highlight {
 }
 .bonus__discount-background {
   position: absolute;
-  background: url("/images/bonus-discount-background.png") no-repeat;
+  background: url("images/bonus-discount-background.png") no-repeat;
   background-size: 1061px 241px;
   width: 1061px;
   height: 241px;
@@ -1313,10 +1313,10 @@ h1.highlight, h2.highlight, h3.highlight, h4.highlight, h5.highlight {
   display: none;
 }
 .slider .splide__arrow_next:after {
-  content: url("/images/slider-arrow-next.svg");
+  content: url("images/slider-arrow-next.svg");
 }
 .slider .splide__arrow_prev:after {
-  content: url("/images/slider-arrow-next.svg");
+  content: url("images/slider-arrow-next.svg");
   transform: rotate(-180deg);
 }
 @media (max-width: 1024px) {
@@ -2211,7 +2211,7 @@ h1.highlight, h2.highlight, h3.highlight, h4.highlight, h5.highlight {
 }
 .arrow__fixed:after {
   position: absolute;
-  content: url(/images/footer-arrow-fixed-button.svg);
+  content: url(images/footer-arrow-fixed-button.svg);
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
