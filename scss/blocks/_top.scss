@@ -91,7 +91,7 @@
         }
     }
 
-    .button_white {
+    .button__white {
         min-width: 304px;
         background-color: $background-color;
         color: $background-dark;
@@ -112,8 +112,6 @@
             padding-right: 10px;
             font-size: 0.8889rem;
         }
-
-
     }
 
     &__rate-items {
