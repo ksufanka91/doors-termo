@@ -392,16 +392,6 @@ body {
   padding: 0 20px;
   margin: 0 auto;
 }
-.wrapper:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  background: red;
-  width: 1px;
-  transform: translateX(-1px);
-}
 
 h1, .h1 {
   font-size: 5rem;
