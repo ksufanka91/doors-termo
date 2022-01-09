@@ -3,13 +3,11 @@
     justify-content: space-between;
     padding: 18px 0;
 
-
     &__info {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
 
     &__burger {
         display: flex;
@@ -107,6 +105,5 @@
         @include media-to(710px) {
             display: none;
         }
-
     }
 }
